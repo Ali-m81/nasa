@@ -1,0 +1,844 @@
+@font-face {
+    font-family: ub-bold;
+    src: url(./fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: ub-medium;
+    src: url(./fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: ub-r;
+    src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+body{
+    margin-top: 3rem;
+    background: url(./d/home/background-home-desktop.jpg);
+    background-size: 100% !important;
+}
+li{
+    list-style: none;
+    color: #fff;
+}
+#img{
+    width: 110rem;
+  position: absolute;
+  left: -5rem;
+  z-index: -1;
+}
+.nav{
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.nav::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:#fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+.nav:hover::after{
+    transform: scaleX(1);
+}
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5rem;
+    margin-left: 1.1rem;
+    z-index: 2;
+}
+nav{
+    background-color: rgba(225, 225, 225, .3);
+    width: 50rem;
+    height: 6rem;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#menu li{
+    font-family: ub-r;
+    margin: 1rem;
+    padding: 1rem;
+}
+#kh-span{
+    height: 1px;
+    width: 35rem;
+    background-color: #222440;
+    margin-left: 4rem;
+  margin-right: -2rem;
+}
+#logo{
+    margin-left: 4rem;
+}
+.page{
+    margin-top: 10rem;
+  margin-left: 2rem;
+  position: relative;
+  margin-top: -3rem;
+  margin-left: -1rem;
+}
+#home-page{
+    display: flex;
+  background-size: 100%;
+}
+h1,p,span{
+    font-family: ub-r;
+    color: #fff;
+}
+#home-page div{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10rem;
+  height: 55rem;
+  width: 19rem;
+}
+#home-page div span{
+    font-size: 1.3rem;
+    margin-bottom: -5rem;
+}
+#home-page div h1{
+    font-size: 6.5rem;
+    margin-bottom: 0;
+}
+#home-page div p{
+    grid-column-end: auto;
+}
+#explore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  right: 21rem;
+  top: 24rem;
+  width: 10rem;
+  height: 10rem;
+  color: black;
+  cursor: pointer;
+}
+#destination-page{
+    display: none;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#s-d{
+  margin-right: 48rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+.iteam-d{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7rem;
+    margin-top: 3rem;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    height: 28rem
+}
+#destination-page img{
+  width: 22rem;
+  margin-left: 10rem
+}
+#destination-page ul{
+    margin: 0;
+    width: 40rem;
+  margin-left: 3rem;
+}
+.information-d li span{
+    display: flex;
+    height: 1px;
+    width: 35rem;
+    background-color: #fff;
+}
+#title h3{
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+.information-d li p{
+   width: 25rem;
+   margin-bottom: 2rem;
+}
+.information-a , .abute{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1rem;
+}
+.abute{
+    margin-left: -1rem;
+}
+.information-a span{
+    margin:  0 2rem;
+    font-size: 1.5rem;
+}
+.abute span{
+    margin: 1rem 9rem;
+    font-size: .8rem;
+}
+#item{
+    position: absolute;
+    left: 36rem;
+    bottom: 21rem;
+    display: flex;
+}#item li{
+    margin: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#crew-page{
+    display: none;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#d-c{
+    width: 70rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+#c-p{
+    font-size: 1.5rem;
+    margin-right: 50rem;
+    margin-top: 5rem;
+}
+#img-c{
+    height: 27rem;
+    margin-top: -1rem;
+    margin-right: 4rem;
+}
+#repage{
+    display: flex;
+    position: absolute;
+    left: 26rem;
+    bottom: 1rem;
+}
+
+
+
+
+#technology-page{
+    display: none;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#t-p , #t-p span{
+    font-size: 1.5rem;
+}
+#t-p{
+    margin-right: 52rem;
+    margin-top: 5rem;
+}
+#technology-text{
+    display: flex;
+    flex-direction: row;
+  margin-top: 12rem;
+  width: 80rem;
+
+}
+
+#technology-page div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.num-t{
+    font-family: ub-r;
+    margin: 1rem;
+    padding: 1rem;
+    width: 1rem;
+    border: solid white 1px;
+    border-radius: 47%;
+    cursor: pointer;
+}
+.num-t:hover{
+    background-color: #fff;
+    color: black !important;
+}
+#description-t , #description-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 30rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+#description-s , #description-cs{
+    font-size: smaller;
+    margin-bottom: .5rem;
+}
+#description-h ,#description-ch{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+    width: 31rem;
+}
+#description-p ,#description-cp{
+    font-size: smaller;
+    height: 12rem;
+    width: 28rem;
+}
+#img-t{
+    height: 28rem;
+    margin: -4rem 0 0 auto;
+    width: 26rem;
+}
+#s-d span,#c-p span , #t-p span {
+    color: #ccc;
+}
+
+
+            /* respansiv for ipad */
+@media (min-width :660px) and (max-width :1080px){
+    body{
+        background: url(./d/home/background-home-tablet.jpg);
+        background-size: 100% !important;
+    }
+nav{
+  width: 39rem;
+}
+#menu{
+    width: 33rem;
+    margin-left: -1rem;
+}
+#menu li{
+    padding: 0;
+}
+#kh-span{
+  height: 1px; 
+  width: 13rem;
+  background-color: #222440;
+  margin-left: 1rem;
+  margin-right: -2rem;
+}
+#logo{
+    margin: 0;
+}
+#home-page div{
+  margin-left: 15rem;
+  height: 45rem;
+  width: 19rem;
+}
+#home-page div p{
+    width: 25rem;
+  text-align-last: center;
+}
+#explore{
+  right: 18rem;
+  top: 31rem;
+  width: 10rem;
+  height: 10rem;
+}
+#home-page div span{
+    font-size: .9rem;
+  margin-bottom: -7rem;
+}
+#home-page div h1{
+    font-size: 7.5rem;
+  margin-bottom: 0;
+}
+.iteam-d{
+  flex-direction: column;
+  margin-right: 7rem;
+  margin-top: 5rem;
+}
+
+#s-d{
+    margin-right: 29rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  font-size: .9rem;
+}
+#destination-page img{
+    width: 22rem;
+  margin-left: 10rem;
+}
+#destination-page ul{
+    width: 22rem;
+    margin-left: 22rem;
+}
+#item{
+    left: -8rem;
+}
+#title h3{
+    margin-left: -2rem;
+}
+.information-d li p{
+    margin-left: -7rem;
+}
+.abute{
+    width: 22rem;
+  margin-left: 22rem;
+}
+.abute span{
+    margin: 1rem;
+  font-size: .8rem;
+}
+.information-a, .abute{
+  margin-left: 1rem;
+  width: 28rem;
+  margin-left: 19rem;
+}
+.information-d li span{
+  width: 34rem;
+  margin-left: -10rem;
+}
+#c-p{
+    font-size: .9rem;
+  margin-right: 29rem;
+  margin-top: 6rem;
+}
+#d-c{
+    display: flex;
+  flex-direction: column;
+    width: 29rem;
+  margin-top: 10rem;
+  
+}
+#img-c{
+    height: 19rem;
+    width: 19rem;
+    margin-top: -1rem;
+    margin-right: 4rem;
+    margin-left: 6.5rem;
+}
+#description-s, #description-cs{
+    margin-left: 8rem;
+    font-size:18px;
+}
+#repage{
+    left: 21rem;
+    bottom: 19rem;  
+}
+#t-p{
+    margin-right: 29rem;
+  margin-top: 2rem;
+}
+#t-p, #t-p span{
+    font-size: .9rem;
+}
+#technology-text{
+  flex-direction: column-reverse;
+  width: 30rem;
+}
+
+#technology-page div ul{
+    flex-direction: row;
+    position: absolute;
+    left: 15rem;
+    top: 27rem;
+  }
+
+#img-t{
+height: 13rem;
+  width: 41rem;
+  margin: -4rem 0 0 -5rem;
+}
+#description-t{
+    margin-top: 7rem;
+}
+#description-s{
+    display: none;
+}
+}
+
+#mobile-nav ul li{
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+              /* responsive for mobile */
+
+@media (min-width :360px) and (max-width :660px){
+    body{
+        background: url(./d/home/background-home-mobile.jpg);
+        background-size: 100% !important;
+    }
+    nav{
+    display: none;
+    width: 31rem;
+    height: 47rem;
+    position: absolute;
+    top: -6rem;
+    background: black;
+    }
+    #menu{
+        flex-direction: column;
+        width: 21rem;
+        padding: 3em;
+        margin-top: 4rem;
+        margin-left: 6rem;
+    }
+    #ham , #close{
+        position: absolute;
+        left: 20rem;
+        z-index: 3;
+    }
+    #close{
+        display: none;
+    }
+
+
+
+#menu li{
+    padding: 0;
+}
+#kh-span{
+  height: 1px; 
+  width: 13rem;
+  background-color: #222440;
+  margin-left: 1rem;
+  margin-right: -2rem;
+}
+#logo{
+    margin: 0;
+}
+#home-page div{
+  margin-left: 15rem;
+  height: 45rem;
+  width: 19rem;
+}
+#home-page div p{
+    width: 25rem;
+  text-align-last: center;
+}
+#explore{
+  right: 18rem;
+  top: 31rem;
+  width: 10rem;
+  height: 10rem;
+}
+#home-page div span{
+    font-size: .9rem;
+  margin-bottom: -7rem;
+}
+#home-page div h1{
+    font-size: 7.5rem;
+  margin-bottom: 0;
+}
+.iteam-d{
+  flex-direction: column;
+ 
+  margin-top: 5rem;
+}
+
+#s-d{
+    margin-right: 29rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  font-size: .9rem;
+}
+#destination-page img{
+    width: 22rem;
+  margin-left: 10rem;
+}
+#destination-page ul{
+    width: 22rem;
+    margin-left: 22rem;
+}
+#item{
+    left: -8rem;
+}
+#title h3{
+    margin-left: -2rem;
+}
+.information-d li p{
+    margin-left: -7rem;
+}
+.abute{
+    width: 22rem;
+  margin-left: 22rem;
+}
+.abute span{
+    margin: 1rem;
+  font-size: .8rem;
+}
+.information-a, .abute{
+  margin-left: 1rem;
+  width: 28rem;
+  margin-left: 19rem;
+}
+.information-d li span{
+  width: 34rem;
+  margin-left: -10rem;
+}
+#c-p{
+    font-size: .9rem;
+  margin-right: 29rem;
+  margin-top: 6rem;
+}
+#d-c{
+    display: flex;
+  flex-direction: column;
+    width: 29rem;
+  margin-top: 10rem;
+  
+}
+#img-c{
+    height: 19rem;
+    width: 19rem;
+    margin-top: -1rem;
+    margin-right: 4rem;
+    margin-left: 6.5rem;
+}
+#description-s, #description-cs{
+    margin-left: 8rem;
+    font-size:18px;
+}
+#repage{
+    left: 21rem;
+    bottom: 19rem;  
+}
+#t-p{
+    margin-right: 29rem;
+  margin-top: 6rem;
+}
+#t-p, #t-p span{
+    font-size: .9rem;
+}
+#technology-text{
+  flex-direction: column-reverse;
+  width: 30rem;
+}
+
+#technology-page div ul{
+    flex-direction: row;
+    position: absolute;
+    left: 15rem;
+    top: 27rem;
+  }
+
+#img-t{
+height: 13rem;
+  width: 41rem;
+  margin: -4rem 0 0 -5rem;
+}
+#description-t{
+    margin-top: 7rem;
+}
+#description-s{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home-page div {
+    margin-left: 3rem;
+    height: 45rem;
+    width: 19rem;
+  }
+  #home-page div span {
+    font-size: .9rem;
+    margin-bottom: -6rem;
+  }
+  #home-page div h1 {
+    font-size: 6.5rem;
+    margin-bottom: 0;
+  }
+  #home-page div p {
+    width: 20rem;
+    text-align-last: center;
+  }
+  #explore {
+    right: 7rem;
+  }
+
+  #destination-page img {
+    width: 18rem;
+    margin-left: 8rem;
+  }
+  #item li {
+    margin: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+  }
+  #title h3 {
+    margin-left: -1rem;
+  }
+  .information-d li p {
+    margin-left: 7rem;
+    font-size: 14px;
+  }
+  #destination-page ul {
+    width: 22rem;
+    margin-left: 5rem;
+  }
+  .information-d li p {
+    width: 23rem;
+    margin-bottom: 2rem;
+    text-align-last: center;
+    margin-left: -5.7rem;
+  }
+  .information-d li span {
+    width: 18rem;
+    margin-left: -3rem;
+  }
+  .information-a, .abute {
+    margin-left: 1rem;
+    width: 26rem;
+    margin-left: 15rem;
+  }
+  .information-a, .abute {
+    margin-left: 1rem;
+    width: 23rem;
+    margin-left: 1rem;
+  }
+  .information-a{
+    padding-bottom: 5rem;
+  }
+  .a{
+    width: 18rem;
+  }
+
+
+  #item{
+    position: absolute;
+    left: -5rem;
+    top: 35rem;
+  }
+  #s-d {
+    margin-right: -1rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    font-size: .9rem;
+  }
+  #c-p {
+    font-size: .9rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+  #description-h, #description-ch {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    width: 20rem;
+  }
+  #description-s, #description-cs {
+    margin-left: 5rem;
+    font-size: 18px;
+  }
+  #description-p, #description-cp {
+    font-size: smaller;
+    height: 12rem;
+    width: 22rem;
+    margin-bottom: 4rem;
+  }
+  
+  #description-t, #description-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 19rem;
+    margin-left: 4rem;
+    margin-top: 8rem;
+  }
+  #d-c {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    margin-top: 2rem;
+    margin-right: 8rem;
+  }
+  #repage {
+    left: 8rem;
+    bottom: 19rem;
+  }
+  #img-c {
+    height: 19rem;
+    width: 19rem;
+    margin-top: -2rem;
+    margin-right: 4rem;
+    margin-left: 6.5rem;
+}
+#t-p {
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+  #img-t {
+    height: 12rem;
+    width: 23rem;
+    margin: -4rem 0 0 4rem;
+  }
+  #technology-page div ul {
+    flex-direction: row;
+    position: absolute;
+    left: 0rem;
+    top: 25rem;
+  }
+  #description-t, #description-c {
+    margin-left: 5rem;
+   }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
